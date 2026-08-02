@@ -1,0 +1,26 @@
+# secrets
+.env
+.env.*
+!.env.example
+*.secret
+secrets/
+
+#private keys
+*.key
+*.pem
+*.p12
+*.pfx
+
+
+data/
+backups/
+volumes/
+
+# editor and os
+.vscode/
+.idea
+.DS_Store
+*~
+EOF
+
+
