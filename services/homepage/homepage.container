@@ -8,7 +8,7 @@ ContainerName=homepage
 Image=ghcr.io/gethomepage/homepage:latest
 PublishPort=3000:3000
 Volume=/srv/containers/homepage/config:/app/config:Z
-Environment=HOMEPAGE_ALLOWED_HOSTS=orbital.local:3000,192.168.1.31:3000,orbital:3000
+Environment=HOMEPAGE_ALLOWED_HOSTS=orbital.home:3000,192.168.1.31:3000,orbital:3000
 
 [Service]
 Restart=always

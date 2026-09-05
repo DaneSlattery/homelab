@@ -1,0 +1,21 @@
+[Unit]
+Description=Jellyfin Media Server
+Wants=network-online.target
+After=network-online.target
+
+[Container]
+ContainerName=jellyfin
+Image=docker.io/jellyfin/jellyfin:latest
+
+PublishPort=8096:8096
+
+Volume=/srv/containers/jellyfin/config:/config:z
+Volume=/srv/containers/jellyfin/cache:/cache:z
+Volume=/srv/data/media:/media:ro,Z
+
+[Service]
+Restart=always
+TimeoutStartSec=300
+
+[Install]
+WantedBy=default.target
