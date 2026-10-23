@@ -11,7 +11,7 @@ PublishPort=8096:8096
 
 Volume=/srv/containers/jellyfin/config:/config:z
 Volume=/srv/containers/jellyfin/cache:/cache:z
-Volume=/srv/data/media:/media:ro,Z
+Volume=/srv/data/media:/media:ro,z
 
 [Service]
 Restart=always
